@@ -1,0 +1,8 @@
+{
+    "attendence":[
+        {"Day":"26/8/2018","Status":"present", "Working_hours":"8"},
+        {"Day":"27/8/2018","Status":"absent", "Working_hours":"0"},
+        {"Day":"28/8/2018","Status":"present", "Working_hours":"7"},
+        {"Day":"29/8/2018","Status":"present", "Working_hours":"9"}
+    ]
+}

@@ -1,0 +1,161 @@
+
+body{
+    background-color: #222;
+        background-image:url("../images/background.png");
+        background-attachment: fixed;
+        background-size: cover;
+        background-repeat: no-repeat; 
+        /* Center and scale the image nicely */
+        background-position: center;
+}
+.form{
+    width: 340px;
+    margin-left: 75px;
+    margin-top: 81px;
+    margin-bottom: 55px;
+    border-radius: 12px;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.2)
+}
+.home{
+  font-family: sans-serif;
+  background: rgb(72, 117, 233);
+  border: none;
+  border-radius: 2px;
+  color: #fff;
+  font-size: 12px;
+  height: 29px;
+  width: 113px;
+  position:relative;
+  left: 75px;
+}
+.home .left {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+}
+a{
+  color: white;
+  text-decoration: none;
+}
+i {
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+  }
+img{
+    margin-bottom: 1%;
+    margin-left: 30%;
+    margin-top: -25%;
+    border-top-left-radius: 50% 50%;
+    border-top-right-radius: 50% 50%;
+    border-bottom-right-radius: 50% 50%;
+    border-bottom-left-radius: 50% 50%;
+}
+
+h1{
+    text-align: center;
+    font-family: "Lato";
+    color: #ccc;
+    font-weight: 100;
+    text-shadow: 0px -1px 0px #000;
+    margin: 5px 0px;
+  }
+
+  input[placeholder="First Name"],
+  input[placeholder="Last Name"]{
+    width: 48%;
+    text-align: center;
+    border: 1px solid #efefef;
+    box-shadow: 0px 3px 0px #999;
+    -webkit-box-shadow: 0px 3px 0px #999;
+    height: 35px;
+    border-radius: 4px;
+    font-size: 14px;
+   
+  }
+
+input[placeholder="Email"],
+input[placeholder="password"]{
+  width: 96%;
+  margin-top: 16px;
+  text-align: center;
+  border-radius: 4px;
+  border: 1px solid #efefef;
+  box-shadow: 0px 3px 0px #999;
+  -webkit-box-shadow: 0px 3px 0px #999;
+  height: 35px;
+  padding-left: 6px;
+  font-size: 14px;
+}
+  .input-contain{
+    width: 43%;
+    height: 35px;
+    margin: 25px auto;
+  }
+
+  input[placeholder="Your Phone"],
+  input[placeholder="Your State"]{
+    width: 96%;
+    margin-top: 16px;
+    text-align: center;
+    border-radius: 4px;
+    border: 1px solid #efefef;
+    box-shadow: 0px 3px 0px #999;
+    -webkit-box-shadow: 0px 3px 0px #999;
+    height: 35px;
+    padding-left: 6px;
+    font-size: 14px;
+  }
+
+
+  button[type='submit'] {
+    background: #4875E9;
+    margin-top: 16px;
+    text-align: center;
+    border: none;
+    width: 37%;
+    height: 33px;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 18px;
+    box-shadow: 0px 3px 0px #59A0E2;
+    -webkit-box-shadow: 0px 3px 0px #59A0E2;
+    position:relative;
+    left: 30%;
+  }
+  h2{
+    text-align: center;
+    font-size: 27px;
+    color: white;
+    font-family: monospace;
+  }
+  
+  footer  {
+    list-style: none;
+    background-color: #000000;
+    height: 45px;
+    font-family: sans-serif;
+    font-size: 13px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
+  }
+
+  .copy li {
+    list-style: none;
+    float: left;
+    background-color: #000000;
+    font-family: sans-serif;
+    margin-left: 30px;
+  }
+  .terms li {
+    background-color: #000000;
+    color: aliceblue;
+    float: right;
+    font-family: sans-serif;
+    margin-right: 80px;
+  }

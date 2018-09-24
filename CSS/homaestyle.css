@@ -1,0 +1,144 @@
+/* Start Main Rules */
+body{
+  height: 4000px  ; margin: auto; background-color: #222222;
+}
+.container{ margin: auto; width: 1070px;
+}
+.clearfix{clear: both}
+/* Ens Main Rules */
+
+
+
+/* Ens Main Rules */
+
+/* Start Header*/
+/*.Header .Slider{height: 315px; ;}*/
+.Header .Navbar{  background-color: #c12127; color: white; overflow: hidden;}
+
+.Header .Navbar h2{ color: #ffffff; float: left; padding: 0px; margin: 6px 0px 0px -32px}
+
+.Header .Navbar ul{ list-style: none; padding-left: 0; overflow: hidden; float: right;}
+
+.Header .Navbar ul li{ padding: 0px;    margin-left: 30px; float: left;}
+
+/* End Header*/
+
+
+/*Start part2*/
+
+
+.part1 .paragraph1 h2{
+    
+    color: aliceblue;
+    font-size: 30px;
+    
+}
+
+.signform form{
+    width: 300px;
+    float: right;
+    border-radius: 12px;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.2)
+   
+}
+
+.signform .signin h1{
+    color: #ffffff;
+    margin-left: 91px;
+    margin-bottom: 5px;
+}
+
+.or h2 {
+    color: #ffffff;
+    margin-left: 127px;
+}
+
+.part1 .image1 img {
+    
+    margin-bottom: 10px;
+    margin-top: -155px;
+}
+
+.signup a{
+  color: white;
+  text-decoration: none;
+}
+
+
+.signup button {
+    margin-bottom: 5px;
+        background: #4875e9;
+    border: aliceblue;
+    width: 37%;
+    height: 33px;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 18px;
+    -webkit-box-shadow: 0px 3px 0px #59A0E2;
+    position: relative;
+    left: 30%;
+}
+.signform form img{
+    margin-bottom: 1%;
+    margin-left: 30%;
+    margin-top: -25%;
+    border-top-left-radius: 50% 50%;
+    border-top-right-radius: 50% 50%;
+    border-bottom-right-radius: 50% 50%;
+    border-bottom-left-radius: 50% 50%;
+}
+
+.signform form input[placeholder="Email OR Your Phone"],
+input[placeholder="password"]{
+  width: 96%;
+  margin-top: 16px;
+  text-align: center;
+  border-radius: 4px;
+  border: 1px solid #efefef;
+  box-shadow: 0px 3px 0px #999;
+  -webkit-box-shadow: 0px 3px 0px #999;
+  height: 35px;
+  padding-left: 6px;
+  font-size: 14px;
+}
+
+
+  .signform form button[type='submit'] {
+    background: #4875E9;
+    margin-top: 16px;
+    text-align: center;
+    border: none;
+    width: 37%;
+    height: 33px;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 18px;
+    box-shadow: 0px 3px 0px #59A0E2;
+    -webkit-box-shadow: 0px 3px 0px #59A0E2;
+    position:relative;
+    left: 30%;
+  }
+
+/*End Part2*/
+
+
+/*Part2*/
+.part2 .mappicture img{
+        float: left;
+    margin-left: -60px;
+        margin-top: 90px;
+}
+
+.part2 .title {
+        color: #ffffff;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.part2 .map1{
+    float: right;
+}
+
+/*End part2*/

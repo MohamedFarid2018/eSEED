@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html ng-app="myTest">
+<head>
+	<title>Get Employee</title>
+	<style>
+		body{
+		  background: url("../images/eSEED.jpg");
+  
+		  /* Full height */
+		  height: 100%; 
+  
+		  /* Center and scale the image nicely */
+		  background-position: center;
+		  background-repeat: no-repeat;
+		  background-size: cover;
+		}
+	  </style>
+</head>
+<script type="text/javascript" src="https://code.angularjs.org/1.5.3/angular.min.js"></script>
+<script type="text/javascript" src="https://code.angularjs.org/1.5.3/angular-route.min.js"></script>
+<script type="text/javascript" src="../js/main.js"></script>
+<body>
+
+    <div ng-controller="test"> -->
+	You Can Search here: <input type="text" ng-model="searching">
+	<ul>
+		<h2>Names And Deatails for all employees</h2>
+		<li ng-repeat="employee in employees | filter:search">
+			Name: {{employee.Name }} </br>
+			Email: {{employee.Email }}</br>
+            Mobile_no: {{employee.Mobile_no}}</br>
+            HireDate: {{employee.HireDate}}</br></br>  
+            <button>Add</button>
+            <button>Delete</button>
+            <button>Edit</button>
+            <br>
+            <br>
+		</li>
+    </ul>
+    
+    <div id="name"></div>
+</div></br></br></br></br>
+
+
+<script>
+    var app = angular.module("myTest",[]);
+	app.controller("test",function($scope,$http){
+		$http.get("http://127.0.0.1:8080/finalData.json").then(function(res){
+			$scope.employees = res.data.employees;
+			console.log(res.data.employees)
+		}).catch(function(err){
+			if(err){
+				console.log("Error Getting Data from json file")
+			}
+		})
+    })
+    
+    
+</script>
+	
+</script>
+
+</body>
+</html>

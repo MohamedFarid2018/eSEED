@@ -1,0 +1,8 @@
+{
+    "employees":[
+        {"Name":"Mohamed Amal","Email":"mohamed@gmail.com", "Mobile_no":"01153902527","HireDate":"2018-09-24 10:04:21.877Z"},
+        {"Name":"Mohamed Ahmed","Email":"mohamedamal780@gmail.com", "Mobile_no":"01153902528","HireDate":"2018-09-24 10:04:21.877Z"},
+        {"Name":"Mahmoud Mohamed","Email":"mohamedamal880@gmail.com", "Mobile_no":"01153902529","HireDate":"2018-09-24 10:04:21.877Z"},
+        {"Name":"Eslam Mohamed","Email":"mohamedamal980@gmail.com", "Mobile_no":"01153902522","HireDate":"2018-09-24 10:04:21.877Z"}
+    ]
+}

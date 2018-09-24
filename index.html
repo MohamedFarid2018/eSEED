@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html ng-app="myTest">
+<head>
+	<title>Index</title>
+</head>
+<script type="text/javascript" src="https://code.angularjs.org/1.5.3/angular.min.js"></script>
+<script type="text/javascript" src="https://code.angularjs.org/1.5.3/angular-route.min.js"></script>
+<script type="text/javascript" src="../js/main.js"></script>
+<body>
+
+    <div ng-controller="test"> -->
+	You Can Search here: <input type="text" ng-model="searching">
+	<ul>
+		<h2>Names And Deatails for all employees</h2>
+		<li ng-repeat="employee in employees | filter:search">
+			Name: {{employee.Name }} </br>
+			Email: {{employee.Email}}</br>
+            Mobile_no: {{employee.Mobile_no}}</br>
+            HireDate: {{employee.HireDate}}</br></br>  
+            <button ng-click="delete(employee.Email)">Delete</button>
+            <button ng-click="edit(employee.Email)">Edit</button>
+            <button ng-click="viewAttendance()">view Attendance</button>
+            <br>
+            <br>
+		</li>
+    </ul>
+    <p>OR You Can Add Employee by clicking here: <button ><a ng-href="http://localhost:5000/addEmployee">Add Employee </a> </button></p>
+    <ul>
+		<h2>Attendence</h2>
+		<li ng-repeat="attendence in attendences | filter:search">
+			Day: {{attendence.Day }} </br>
+			Working_hours: {{attendence.Working_hours }}</br>
+            Status: {{attendence.Status}}</br></br>  
+            <br>
+            <br>
+		</li>
+    </ul>
+    <div id="name"></div>
+</div></br></br>
+
+</br></br>
+
+
+<script>
+    var app = angular.module("myTest",[]);
+	app.controller("test",function($scope,$http){
+		$http.get("http://127.0.0.1:8080/finalData.json").then(function(res){
+			$scope.employees = res.data.employees;
+			console.log(res.data.employees)
+		}).catch(function(err){
+			if(err){
+				console.log("Error Getting Data from json file")
+			}
+        })
+        
+        $scope.delete = function(email){
+            console.log(data);
+            var data={email:email};
+            const url = 'http://localhost:5000/deleteEmployee'
+            var res = $http.post(url, data);
+            res.success(function(data, status, headers, config) {
+                $scope.message = data;
+            });
+            res.error(function(data, status, headers, config) {
+                alert( "failure message: " + JSON.stringify({data: data}));
+            });
+            console.log(data);
+        }
+
+        $scope.viewAttendance = function(){
+            $http.get("http://127.0.0.1:8080/attendence.json").then(function(res){
+                console.log(res.data.attendence);
+			$scope.attendences = res.data.atendence;
+			console.log(res.data.atendence)
+		}).catch(function(err){
+			if(err){
+				console.log("Error Getting Data from json file")
+			}
+        })
+            console.log(".....");
+        }
+        $scope.edit = function(email){
+            console.log(data);
+            var data={email:email};
+            var res = $http.post('http://localhost:5000/editEmployee', data);
+            res.success(function(data, status, headers, config) {
+                $scope.message = data;
+            });
+            res.error(function(data, status, headers, config) {
+                alert( "failure message: " + JSON.stringify({data: data}));
+            });
+            console.log(data);
+        }
+    })
+    
+    
+    
+</script>
+	
+</script>
+
+</body>
+</html>
